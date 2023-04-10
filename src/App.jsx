@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Title from "./components/Title";
 import ToDo from "./components/ToDo";
+import Pomodoro from "./components/Pomodoro";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,6 +11,7 @@ function App() {
     <div className="bg-[url(./assets/bg-1.jpeg)] bg-no-repeat bg-center bg-cover w-screen h-screen relative text-white">
       <Title />
       <ToDo />
+      <Pomodoro />
     </div>
   );
 }
