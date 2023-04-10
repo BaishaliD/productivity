@@ -42,7 +42,8 @@ export default function ToDo() {
       }
       return task;
     });
-    newTasks.find((task) => task.task === "") && setAddButtonDisbaled(true);
+    newTasks.find((task) => task.task === "") ||
+      (newTasks.length === 0 && setAddButtonDisbaled(true));
     setTasks(newTasks);
   };
 
