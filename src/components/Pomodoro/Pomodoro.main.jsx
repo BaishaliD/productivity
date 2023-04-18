@@ -23,17 +23,15 @@ export default function Pomodoro() {
   };
 
   return (
-    <div className="absolute left-10 top-10 text-white">
-      <div className="font-thin flex flex-col items-center bg-black-overlay py-4 px-8 rounded-xl">
-        <div className="flex items-center mb-4">
-          <AiFillCaretLeft onClick={prev} />
-          <div className="w-[120px] overflow-hidden justify-center px-2 flex whitespace-nowrap">
-            <Label text={active} />
-          </div>
-          <AiFillCaretRight onClick={next} />
+    <div className="absolute left-10 top-10 text-white font-thin flex flex-col items-center bg-black-overlay py-4 px-8 rounded-md">
+      <div className="flex items-center mb-4">
+        <AiFillCaretLeft onClick={prev} />
+        <div className="w-[120px] overflow-hidden justify-center px-2 flex whitespace-nowrap">
+          <Label text={active} />
         </div>
-        <Clock active={active} />
+        <AiFillCaretRight onClick={next} />
       </div>
+      <Clock active={active} />
     </div>
   );
 }

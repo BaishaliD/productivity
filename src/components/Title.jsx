@@ -35,8 +35,8 @@ export default function Title() {
   };
 
   return (
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-      <div className="font-thin flex flex-col items-center bg-black-overlay py-4 px-8 rounded-xl">
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white flex flex-col items-center">
+      <div className="font-thin flex flex-col items-center bg-black-overlay py-4 px-8 rounded-md">
         <div className="text-9xl">{time}</div>
         {greetings && <h1 className="text-4xl">{greetings}, Baishali</h1>}
       </div>
