@@ -7,13 +7,17 @@ import Menu from "./components/Menu/Menu.main";
 import ReadingList from "./components/ReadingList/ReadingList.main";
 
 function App() {
+  const [showReadingList, setShowReadingList] = useState(false);
+
   return (
     <div className="bg-[url(./assets/bg-1.jpeg)] bg-no-repeat bg-center bg-cover w-screen h-screen relative text-white">
-      <Menu />
+      <Menu setShowReadingList={setShowReadingList} />
       <Title />
       <Todo />
       <Pomodoro />
-      <ReadingList />
+      {showReadingList && (
+        <ReadingList setShowReadingList={setShowReadingList} />
+      )}
     </div>
   );
 }
