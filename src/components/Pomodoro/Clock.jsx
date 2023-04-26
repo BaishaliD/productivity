@@ -96,7 +96,7 @@ const Clock = ({ active }) => {
   return (
     <div className="relative">
       <div
-        className="absolute w-[110px] h-[110px] top-0 left-0 z-50 text-3xl hover:bg-black-overlay shadow-white-glow rounded-full"
+        className="absolute w-[130px] h-[130px] top-0 left-0 z-50 text-3xl hover:bg-black-overlay shadow-white-glow rounded-full"
         onClick={togglePlay}
       >
         <div className="h-full w-full flex justify-center items-center opacity-0 hover:opacity-100">
@@ -104,16 +104,16 @@ const Clock = ({ active }) => {
         </div>
       </div>
       <motion.svg
-        width="110"
-        height="110"
+        width="130"
+        height="130"
         initial="hidden"
         onClick={togglePlay}
       >
-        <circle cx="55" cy="55" r="47" stroke="#ffffff3b" fill="none" />
+        <circle cx="65" cy="65" r="55" stroke="#ffffff3b" fill="none" />
         <motion.circle
-          cx="55"
-          cy="55"
-          r="50"
+          cx="65"
+          cy="65"
+          r="55"
           stroke="#63ddec"
           fill="none"
           initial="hidden"
