@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         "white-overlay": "rgba(255, 255, 255, 0.3)",
-        "black-overlay": "rgba(0, 0, 0, 0.3)",
+        "black-overlay": "rgba(0, 0, 0, 0.5)",
       },
       fontFamily: {
         display: ["Roboto", "sans-serif"],
