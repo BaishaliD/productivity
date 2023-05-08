@@ -19,8 +19,17 @@ const Task = ({ task, updateTask, toggleTask, deleteTask }) => {
       layout
       initial={{ opacity: 0, y: 50, scale: 0.3 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.5, transition: { duration: 2 } }}
-      whileHover={{ scale: 1.02, transition: { duration: 0.1 } }}
+      exit={{
+        rotateZ: 5,
+        y: 200,
+        opacity: 0,
+        transition: {
+          y: { delay: 0.1, stiffness: 1000, duration: 0.8 },
+          rotateZ: { duration: 0.5 },
+          opacity: { duration: 0.8 },
+        },
+      }}
+      whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
       className="w-full bg-black-overlay p-2 my-2 flex items-center"
     >
       <div
